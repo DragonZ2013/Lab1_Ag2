@@ -6,6 +6,7 @@ public class Main {
         int[] numbers = {4,8,3,10,17};
         System.out.println(aufgabe_1(numbers));
         System.out.println(aufgabe_2(numbers));
+        System.out.println(aufgabe_3(numbers));
 
     }
 
@@ -27,6 +28,16 @@ public class Main {
                 min_val=value;
         }
         return min_val;
+    }
+
+    public static int aufgabe_3(int [] numbers){
+        //returns the sum of the maximal n-1 elements
+        int sum=0;
+        for(int value:numbers){
+            sum+=value;
+        }
+        sum-=aufgabe_2(numbers);
+        return sum;
     }
 
 }
