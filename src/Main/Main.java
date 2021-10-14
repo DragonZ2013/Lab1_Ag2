@@ -3,10 +3,11 @@ package Main;
 public class Main {
 
     public static void main(String[] args) {
-        int[] numbers = {4,8,3,10,17};
+        int[] numbers = {4,8,3,10,17};//n elements
         System.out.println(aufgabe_1(numbers));
         System.out.println(aufgabe_2(numbers));
         System.out.println(aufgabe_3(numbers));
+        System.out.println(aufgabe_4(numbers));
 
     }
 
@@ -40,4 +41,13 @@ public class Main {
         return sum;
     }
 
+    public static int aufgabe_4(int [] numbers){
+        //returns the sum of the minimal n-1 elements
+        int sum=0;
+        for(int value:numbers){
+            sum+=value;
+        }
+        sum-=aufgabe_1(numbers);
+        return sum;
+    }
 }
