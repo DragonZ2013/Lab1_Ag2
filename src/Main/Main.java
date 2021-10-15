@@ -13,7 +13,9 @@ public class Main {
 
     public static int aufgabe_1(int [] numbers){
         //returns the maximal value of the array
-        int max_val=numbers[0];
+        //Input: int[]
+        //Output: int
+        int max_val=numbers[0]; 
         for(int value:numbers){
             if(value>max_val)
                 max_val=value;
@@ -23,6 +25,8 @@ public class Main {
 
     public static int aufgabe_2(int [] numbers){
         //returns the minimal value of the array
+        //Input: int[]
+        //Output: int
         int min_val=numbers[0];
         for(int value:numbers){
             if(value<min_val)
@@ -33,6 +37,8 @@ public class Main {
 
     public static int aufgabe_3(int [] numbers){
         //returns the sum of the maximal n-1 elements
+        //Input: int[]
+        //Output: int
         int sum=0;
         for(int value:numbers){
             sum+=value;
@@ -43,6 +49,8 @@ public class Main {
 
     public static int aufgabe_4(int [] numbers){
         //returns the sum of the minimal n-1 elements
+        //Input: int[]
+        //Output: int
         int sum=0;
         for(int value:numbers){
             sum+=value;
