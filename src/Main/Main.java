@@ -11,10 +11,12 @@ public class Main {
 
     }
 
+    /**
+     * returns the maximal value of the array
+     * @param numbers:int[]
+     * @return int
+     */
     public static int aufgabe_1(int [] numbers){
-        //returns the maximal value of the array
-        //Input: int[]
-        //Output: int
         int max_val=numbers[0]; 
         for(int value:numbers){
             if(value>max_val)
@@ -23,10 +25,12 @@ public class Main {
         return max_val;
     }
 
+    /**
+     * returns the minimal value of the array
+     * @param numbers:int[]
+     * @return int
+     */
     public static int aufgabe_2(int [] numbers){
-        //returns the minimal value of the array
-        //Input: int[]
-        //Output: int
         int min_val=numbers[0];
         for(int value:numbers){
             if(value<min_val)
@@ -35,10 +39,12 @@ public class Main {
         return min_val;
     }
 
+    /**
+     * returns the sum of the maximal n-1 elements
+     * @param numbers:int[]
+     * @return int
+     */
     public static int aufgabe_3(int [] numbers){
-        //returns the sum of the maximal n-1 elements
-        //Input: int[]
-        //Output: int
         int sum=0;
         for(int value:numbers){
             sum+=value;
@@ -47,10 +53,12 @@ public class Main {
         return sum;
     }
 
+    /**
+     * returns the sum of the minimal n-1 elements
+     * @param numbers:int[]
+     * @return int
+     */
     public static int aufgabe_4(int [] numbers){
-        //returns the sum of the minimal n-1 elements
-        //Input: int[]
-        //Output: int
         int sum=0;
         for(int value:numbers){
             sum+=value;
